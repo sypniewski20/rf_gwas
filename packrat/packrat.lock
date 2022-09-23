@@ -29,6 +29,17 @@ Source: CRAN
 Version: 1.1-3
 Hash: c25e77c542c7cfa38c99c348677c62fc
 
+Package: Rcpp
+Source: CRAN
+Version: 1.0.9
+Hash: b772bf0eecdcd073c533738e7d2c241b
+
+Package: ape
+Source: CRAN
+Version: 5.6-2
+Hash: 44bc0aa38aab1128bd7e9b0387294cc9
+Requires: Rcpp, lattice, nlme
+
 Package: askpass
 Source: CRAN
 Version: 1.1
@@ -107,6 +118,11 @@ Package: clipr
 Source: CRAN
 Version: 0.8.0
 Hash: f8ae5e8ad6b3e416249379deec7e9c6f
+
+Package: cluster
+Source: CRAN
+Version: 2.1.4
+Hash: 2f4776a9412f3a4d9368449ca86d79d3
 
 Package: codetools
 Source: CRAN
@@ -354,11 +370,16 @@ Version: 2.0.1
 Hash: fa0687ee20196d8aa4e2d724cb0f7199
 Requires: cachem, rlang
 
+Package: memuse
+Source: CRAN
+Version: 4.2-1
+Hash: 884141d9fb11ab3490a86236c96759f6
+
 Package: mgcv
 Source: CRAN
 Version: 1.8-40
 Hash: 81df2f7ebdd36f0253d93f35600a5993
-Requires: Matrix, nlme
+Requires: nlme, Matrix
 
 Package: mime
 Source: CRAN
@@ -395,11 +416,21 @@ Source: CRAN
 Version: 0.8.1
 Hash: 502257b0c1ef1db0274ea5ecdec3c9ab
 
+Package: permute
+Source: CRAN
+Version: 0.9-7
+Hash: 5b0975796d2c0932f7b2222271d73fe3
+
 Package: pillar
 Source: CRAN
 Version: 1.8.1
 Hash: 8c6910fedb8ed7cd880db123e6acf066
 Requires: cli, glue, lifecycle, rlang, vctrs, fansi, utf8
+
+Package: pinfsc50
+Source: CRAN
+Version: 1.2.0
+Hash: ca283f3ff6631945802af44d37694fc7
 
 Package: pkgconfig
 Source: CRAN
@@ -436,8 +467,8 @@ Requires: magrittr, rlang
 
 Package: randomForest
 Source: CRAN
-Version: 4.6-10
-Hash: a82c56791dbc0aa9a33272cd83aadf81
+Version: 4.6-12
+Hash: b37274857316c7b9431cc7f72aaffb77
 
 Package: rappdirs
 Source: CRAN
@@ -584,11 +615,24 @@ Source: CRAN
 Version: 1.1-0
 Hash: 323d2e3bd5a093772d84b390f0e05500
 
+Package: vcfR
+Source: CRAN
+Version: 1.13.0
+Hash: 1ac7a2028aea75b094f0d74033651011
+Requires: Rcpp, ape, dplyr, magrittr, memuse, pinfsc50, stringr,
+    tibble, viridisLite, vegan
+
 Package: vctrs
 Source: CRAN
 Version: 0.4.1
 Hash: 3c180c5b05bf27b28b1bce7a0068ee8b
 Requires: rlang, cli, glue
+
+Package: vegan
+Source: CRAN
+Version: 2.6-2
+Hash: 85b2642c66d5ef34d96241ea9e6a8c2d
+Requires: MASS, cluster, lattice, mgcv, permute
 
 Package: viridisLite
 Source: CRAN
