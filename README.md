@@ -4,4 +4,4 @@
 
 2. Start R project in this repo
 
-3. Type packrat::restore() for easy setup of required packages
+3. Type `packrat::restore()` for easy setup of required packages
