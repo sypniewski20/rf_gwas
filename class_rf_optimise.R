@@ -42,7 +42,7 @@ genotypes_path <- 'gt_obesity_panel.tsv'
 print('loading genotypes', quote = F)
 gt_data <- fread(genotypes_path, 
                  header = T,
-                           nThread = 18) %>%
+                           nThread = ncpu) %>%
   select(-IID)
 
 ### path to covariates
